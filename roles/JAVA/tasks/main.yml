@@ -1,2 +1,16 @@
 ---
-# tasks file for JAVA
+- hosts: webserver
+  become: yes
+  tasks:
+    - name: install JAVA on remote
+      yum:
+        name: java
+        state: present
+      when: ansible_os_family == "RedHat"
+    - name: install apache on remote
+      apt:
+        name: openjdk-8-jdk
+        state: present
+        update_cache: yes
+      when: ansible_os_family == "Debian"
+    
