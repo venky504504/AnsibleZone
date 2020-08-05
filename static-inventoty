@@ -1,5 +1,5 @@
 [local]
-localhost
+ip-172-31-27-188.us-east-2.compute.internal
 
 [webserver]
 ip-172-31-17-131.us-east-2.compute.internal

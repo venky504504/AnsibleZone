@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin python3
 
 '''
 This is a python script used for an example of a dynamic inventory script
@@ -49,6 +49,7 @@ class OurInventory(object):
                 'hosts': ['ip-172-31-17-131.us-east-2.compute.internal', 'ip-172-31-29-205.us-east-2.compute.internal', 'localhost'],
                 'vars': {
                     'ansible_user': 'venkat',
+                     'ansible_user': 'root',
                     'test_variable': 'nonspecific_value'
                 }
             },

@@ -1,0 +1,11 @@
+---
+- hosts: local
+  tasks:
+    - name: print all 1 to 10
+      command: "echo {{ item }}"
+      with_items: [ 1,2,3,4,5 ]
+    - name: install git,tree,wget
+      yum:
+      name: "{{ item }}"
+      with_items: [ "git", "tree", "wget" ]
+      when: ansible_distribution == "RedHat"
