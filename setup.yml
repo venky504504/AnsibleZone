@@ -2,4 +2,4 @@
 - hosts: webserver
   become: yes
   roles:
-    - role: JAVA
+  - role: JAVA
