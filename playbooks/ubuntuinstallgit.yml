@@ -1,0 +1,10 @@
+---
+- hosts: dbserver
+  become: yes
+  tasks:
+    - name: install git
+      apt:
+        name: "{{ package_name }}"
+        state: latest
+        update_cache: yes
+        
