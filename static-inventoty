@@ -1,0 +1,12 @@
+[local]
+localhost
+
+[webserver]
+ip-172-31-17-131.us-east-2.compute.internal
+
+[dbserver]
+ip-172-31-29-205.us-east-2.compute.internal
+
+[webserver:vars]
+log_path=/opt/logs
+installgit=git

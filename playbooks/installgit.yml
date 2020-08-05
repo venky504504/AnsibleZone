@@ -1,0 +1,9 @@
+---
+- hosts: webserver
+  become: yes
+  tasks:
+    - name: install git
+      yum:
+        name: "{{ installgit }}"
+        state: latest
+        
