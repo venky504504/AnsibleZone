@@ -1,6 +1,4 @@
 ---
-- hosts: webserver
-  become: yes
   tasks:
     - name: install JAVA on remote
       yum:
